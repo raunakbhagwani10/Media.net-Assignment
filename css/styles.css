@@ -1,0 +1,257 @@
+body, p, div, ul {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: Helvetica,Georgia;
+    }
+    header {
+      padding: 50px;
+      background-color: darkgrey;
+    }
+
+
+    .nav-container .nav {
+      background-color: #fff;
+      border-radius: 5px;
+      display: flex;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+
+    .nav-container .nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+	  
+    .wrapper {
+      margin: 0 80px;
+    }
+    .section {
+      padding: 20px 0;
+    }
+    .section-nav {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .section .section-container {
+      display: flex;
+    }
+    .section .section-container .left-container {
+      width: 65%;
+      box-sizing: border-box;
+      padding-right: 30px;
+    }
+    .section .section-container .right-container {
+      width: 35%;
+      box-sizing: border-box;
+    }
+
+    .section .section-container .left-container .section-heading {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+
+    .left-container .section-content {
+      padding: 30px;
+      background-color: gray;
+    }
+    .right-container .section-content {
+      padding-bottom: 30px;
+    }
+    .section-content .content {
+      display: flex;
+    }
+
+    .left-container .section-content .content .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .left-container .section-content .content .image .image-container {
+      height: 80px;
+      width: 80px;
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .content .desc .desc-heading {
+      font-size: 20px;
+      color: #fff;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+
+    .content .desc .desc-info {
+      font-size: 14px;
+      color: lightgray;
+      line-height: 20px
+    }
+
+    .right-container .section-content .content .image .image-container {
+      background: gray;
+      height: 90px;
+      width: 140px;
+      margin-right: 20px;
+    }
+
+    .right-container .content .desc .desc-heading,
+    .right-container .content .desc .desc-info {
+      color: #000;
+    }
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 100%;
+	  position: relative;
+	  margin: auto;
+	  padding-top: 20px;
+
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	  display: none;
+	}
+	
+	.mySlides image{
+		width: 100%;
+		max-height: 80%;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	} 
+	  
+	#backtotopbtn {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  border: none; 
+	  outline: none; 
+	  background-color: red;
+	  color: white;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 10px;
+	  font-size: 18px;
+	}
+	
+	#backtotopbtn:hover {
+  		background-color: #555;
+	}
+
+	@media screen and (max-width: 800px){
+		.section .section-container{
+			flex-wrap: wrap;
+		}
+		.section .section-container .left-container{
+			  min-width: 100%;
+			  padding-bottom: 20px;
+			  padding-left: 20px;
+		 }
+		.section .section-container .right-container{
+			min-width: 100%;
+			padding-left: 20px;
+		}
+		.wrapper{
+			margin: 0px 0px;
+		}
+		.section-nav{
+			padding-left: 20px;
+		}
+		.slideshow-container{
+			padding: 20px;
+		}
+	  }

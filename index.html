@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="nav">
+        <div class="logo">
+          <p>Logo</p>
+        </div>
+        <ul class="menu-item">
+          <li>Menu Item 1 |&nbsp;</li>
+          <li>Menu Item 2 |&nbsp;</li>
+          <li>Menu Item 3</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="images/img2.jpg" alt="" width="100%">
+			<div class="text">Caption 1</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/img3.jpg" alt="" width="100%">
+			<div class="text">Caption 1</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/img1.gif" alt="" width="100%">
+			<div class="text">Caption 1</div>
+		</div>
+	</div>
+	
+  <div class="wrapper">
+    <div class="section">
+      <div class="section-nav">
+        <p>Category > Parent Section > Child Section </p>
+      </div>
+      <div class="section-container">
+        <div class="left-container">
+          <div class="section-heading">
+            <p>Sub - Section Title</p>
+          </div>
+          
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"><p>User image</p></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"><p>User image</p></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"><p>User image</p></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-container">
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-content">
+            <div class="content">
+              <div class="image"><div class="image-container"></div></div>
+              <div class="desc">
+                <div class="desc-heading"><p>Top Article title 1</p></div>
+                <div class="desc-info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam excepturi nobis natus nisi necessitatibus iusto velit corrupti deleniti cum rem, a aspernatur ullam repudiandae voluptatem ipsa explicabo, impedit vitae.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="backTotop">
+  	<button onclick="topFunction()" id="backtotopbtn"><i class="fa fa-chevron-up"></i></button>
+  </div>
+  
+  <script type="text/javascript">
+  	  var slideIndex = 0;
+	  showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}
+	  slides[slideIndex-1].style.display = "block";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	} 
+
+	mybutton = document.getElementById("backtotopbtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0; // For Safari
+	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+
+  </script>
+  
+</body>
+</html>
